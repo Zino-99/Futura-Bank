@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import React, { useState } from "react";
 
@@ -40,10 +41,10 @@ const toggleMenu = () => {
         
 
           <ul className="hidden md:flex mx-auto space-x-10 font-bold text-xl">
-            <li><a href="#" className="text-black">Home</a></li>
-            <li><a href="#" className="text-black">Expense</a></li>
-            <li><a href="#" className="text-black">Categorie</a></li>
-            <li><a href="#" className="text-black">Help</a></li>
+            <li><Link to="/" className="text-black hover:text-blue-600">Home</Link></li>
+            <li><Link to="/expense" className="text-black hover:text-blue-600">Expense</Link></li>
+            <li><Link to="categorie" className="text-black hover:text-blue-600">About</Link></li>
+            <li><Link to="/Help" className="text-black hover:text-blue-600">Help</Link></li>
           </ul>
         </div>
 
